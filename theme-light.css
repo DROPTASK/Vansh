@@ -1,0 +1,41 @@
+/* Light theme CSS for Crypto Airdrop Tracker */
+
+:root {
+  /* Colors */
+  --primary-color: #6366F1;
+  --primary-dark: #4F46E5;
+  --primary-light: #EEF2FF;
+  
+  --background-color: #F9FAFB;
+  --card-background: #FFFFFF;
+  --hover-color: #F3F4F6;
+  --hover-color-light: #F8FAFC;
+  --border-color: #E5E7EB;
+  
+  --text-primary: #111827;
+  --text-secondary: #6B7280;
+  
+  --success: #10B981;
+  --success-light: #ECFDF5;
+  
+  --error: #EF4444;
+  --error-light: #FEF2F2;
+  --error-dark: #DC2626;
+  
+  --input-background: #FFFFFF;
+  
+  /* Shadows */
+  --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  
+  /* Border radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  
+  /* Chart Colors */
+  --chart-bg-1: #6366F1;
+  --chart-bg-2: #10B981;
+  --chart-bg-3: #EF4444;
+  --chart-bg-4: #F59E0B;
+  --chart-bg-5: #3B82F6;
+}
