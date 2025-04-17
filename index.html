@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Airdrop Tracker</title>
+  
+  <!-- Stylesheets -->
+  <link href="main.css" rel="stylesheet">
+  <link id="theme-css" href="theme-light.css" rel="stylesheet">
+  
+  <!-- RemixIcon for icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  
+  <!-- Chart.js for charts -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body class="theme-light">
+  <div id="app">
+    <!-- App Header -->
+    <header id="app-header">
+      <div class="container">
+        <div class="logo">
+          <img src="logo.svg" alt="Crypto Airdrop Tracker" />
+          <h1>Airdrop Tracker</h1>
+        </div>
+        <div class="header-actions">
+          <button id="theme-toggle" class="btn btn-ghost btn-circle">
+            <i class="ri-sun-line"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    
+    <!-- Main Content Area -->
+    <main>
+      <div id="content-area" class="container">
+        <!-- Page content will be loaded here -->
+      </div>
+    </main>
+    
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+      <a href="#dashboard" class="nav-item active" data-page="dashboard">
+        <i class="ri-dashboard-line"></i>
+        <span>Dashboard</span>
+      </a>
+      <a href="#investment" class="nav-item" data-page="investment">
+        <i class="ri-funds-line"></i>
+        <span>Investment</span>
+      </a>
+      <a href="#explore" class="nav-item" data-page="explore">
+        <i class="ri-compass-line"></i>
+        <span>Explore</span>
+      </a>
+      <a href="#statistics" class="nav-item" data-page="statistics">
+        <i class="ri-bar-chart-line"></i>
+        <span>Statistics</span>
+      </a>
+      <a href="#tasks" class="nav-item" data-page="tasks">
+        <i class="ri-task-line"></i>
+        <span>Tasks</span>
+      </a>
+      <a href="#news" class="nav-item" data-page="news">
+        <i class="ri-newspaper-line"></i>
+        <span>News</span>
+      </a>
+    </nav>
+  </div>
+  
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="storage.js"></script>
+  <script src="ui-components.js"></script>
+  
+  <!-- Page-specific scripts -->
+  <script src="dashboard.js"></script>
+  <script src="investment.js"></script>
+  <script src="explore.js"></script>
+  <script src="statistics.js"></script>
+  <script src="tasks.js"></script>
+  <script src="news.js"></script>
+  
+  <!-- Main app script -->
+  <script src="app.js"></script>
+  
+  <script>
+    // Initialize local storage on page load
+    document.addEventListener('DOMContentLoaded', () => {
+      storageService.initializeStorage();
+    });
+  </script>
+</body>
+</html>
